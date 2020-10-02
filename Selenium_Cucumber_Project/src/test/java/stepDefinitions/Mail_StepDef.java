@@ -65,7 +65,7 @@ public class Mail_StepDef extends BaseTest {
 	@Then("an acknowledgement message is displayed")
 	public void an_acknowledgement_message_is_displayed() {
 		String actualMsg = driver.findElement(Locators.confMsg_Text).getText();
-		actualMsg = actualMsg.strip();
+		actualMsg = actualMsg.trim();
 		System.out.println("actualMsg: " + actualMsg);
 		String expectedMsg = "The message has been sent to naveen1 naveen1 (naveen1)";
 		//assert.assertEquals("check if the mail is sent", , );

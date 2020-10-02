@@ -1,0 +1,131 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-02T09:10:47.960Z",
+        "before": [
+          {
+            "result": {
+              "duration": 95575358100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Mail_StepDef.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 28499059900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Register_StepDef.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "To register with valid details",
+        "description": "",
+        "id": "to-validate-user-registration;to-register-with-valid-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user is on the application home page.",
+            "match": {
+              "location": "stepDefinitions.Register_StepDef.the_user_is_on_the_application_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53756435700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user clicks on Sign Up option",
+            "match": {
+              "location": "stepDefinitions.Register_StepDef.the_user_clicks_on_sign_up_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 664068400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters details for \"Tester19\", \"SDET\", \"madhusystemengineer@gmail.com\", \"Tester19\", \"Tester@1926\", \"Tester@1926\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tester19\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"SDET\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"madhusystemengineer@gmail.com\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Tester19\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"Tester@1926\"",
+                  "offset": 89
+                },
+                {
+                  "val": "\"Tester@1926\"",
+                  "offset": 104
+                }
+              ],
+              "location": "stepDefinitions.Register_StepDef.user_enters_details_for(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17453932000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks on Register button",
+            "match": {
+              "location": "stepDefinitions.Register_StepDef.clicks_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: Check if User is Registered successfully expected:\u003cDear Tester19 SDET,[]Your personal settin...\u003e but was:\u003cDear Tester19 SDET,[\n\n]Your personal settin...\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat stepDefinitions.Register_StepDef.user_is_logged_into_the_application_and_sees_a_confirmation_message_on_the_screen(Register_StepDef.java:57)\r\n\tat ✽.user is logged into the application and sees a confirmation message on the screen.(file:///C:/SE-United/WP/Selenium_Cucumber_Project/src/test/resources/Features/Register.feature:8)\r\n",
+              "duration": 42178600,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user is logged into the application and sees a confirmation message on the screen.",
+            "match": {
+              "location": "stepDefinitions.Register_StepDef.user_is_logged_into_the_application_and_sees_a_confirmation_message_on_the_screen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate user registration",
+    "description": "",
+    "id": "to-validate-user-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Register.feature",
+    "tags": []
+  }
+]

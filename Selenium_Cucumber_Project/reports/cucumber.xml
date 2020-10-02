@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="196.553">
+    <testcase classname="To validate user registration" name="To register with valid details" time="196.17">
+        <failure message="Check if User is Registered successfully expected:&lt;Dear Tester19 SDET,[]Your personal settin...&gt; but was:&lt;Dear Tester19 SDET,[&#10;&#10;]Your personal settin...&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given The user is on the application home page..............................passed
+When The user clicks on Sign Up option......................................passed
+And user enters details for "Tester19", "SDET", "madhusystemengineer@gmail.com", "Tester19", "Tester@1926", "Tester@1926".passed
+And clicks on Register button...............................................passed
+Then user is logged into the application and sees a confirmation message on the screen..failed
+
+StackTrace:
+org.junit.ComparisonFailure: Check if User is Registered successfully expected:<Dear Tester19 SDET,[]Your personal settin...> but was:<Dear Tester19 SDET,[
+
+]Your personal settin...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at stepDefinitions.Register_StepDef.user_is_logged_into_the_application_and_sees_a_confirmation_message_on_the_screen(Register_StepDef.java:57)
+	at ✽.user is logged into the application and sees a confirmation message on the screen.(file:///C:/SE-United/WP/Selenium_Cucumber_Project/src/test/resources/Features/Register.feature:8)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

@@ -69,7 +69,11 @@ public class Mail_StepDef extends BaseTest {
 		System.out.println("actualMsg: " + actualMsg);
 		String expectedMsg = "The message has been sent to naveen1 naveen1 (naveen1)";
 		//assert.assertEquals("check if the mail is sent", , );
-		Assert.assertEquals("check if the mail is sent", expectedMsg, actualMsg);
+		//Assert.assertEquals("check if the mail is sent", expectedMsg, actualMsg);
+		
+		boolean flag = actualMsg.contains(expectedMsg);
+		Assert.assertTrue(flag);
+		System.out.println("Mail sent successfully");
 		
 	}
 

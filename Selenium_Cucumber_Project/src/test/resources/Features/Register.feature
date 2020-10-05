@@ -9,4 +9,4 @@ Then user is logged into the application and sees a confirmation message on the 
 
 Examples:
 |First Name |Last Name |email 											|Username	|Password	  |Confirm password|
-|Tester19		|SDET		 	|madhusystemengineer@gmail.com|Tester19	|Tester@1926|Tester@1926|
+|Tester1606		|SDET		 	|madhusystemengineer@gmail.com|Tester1606	|Tester@1926|Tester@1926|
